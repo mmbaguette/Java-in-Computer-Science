@@ -11,7 +11,6 @@ import java.util.Scanner;
  * give up, then display their score.
  */
 public class AnswerMeThis {
-
 	public static void main(String[] args) {
 		int maxTries = 3; //maximum number of tries before losing
 		int totalTries = 0; //total tries in all questions that user took
@@ -44,11 +43,8 @@ public class AnswerMeThis {
 			//retrieve this computer's hostname from its IP address
 			hostname = InetAddress.getLocalHost().getHostName(); 
 			
-			//if the user's computer is the teacher's or Jonathan
-			if (
-				hostname.equals("2170I-L235-01S") 
-				|| hostname.equals("2170I-L235-19")
-				|| !hostname.startsWith("2170I")) { //if you mark this at home and not at Laurier.
+			//if the computer belongs to my teacher
+			if (hostname.equals("PC-1-ICS") {
 				maxRandInt = 2000; 
 				System.out.format("Good luck, %s. You'll need it.\n", hostname);
 			} else {
