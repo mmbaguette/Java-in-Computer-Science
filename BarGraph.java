@@ -25,7 +25,10 @@ public class BarGraph {
 		keys = scan.nextLine().split(",",0);
 		keysList = new LinkedList<String>(Arrays.asList(keys)); //assign array list from String array of values
 		keysList.removeAll(Collections.singleton("")); //remove all empty strings
-		for(int i=0;i<keysList.size();i++) {keysList.set(i, keysList.get(i).replaceFirst("^\\s*", ""));} //remove trailling spaces
+		
+		for(int i = 0; i<keysList.size(); i++) { //remove trailling spaces
+			keysList.set(i, keysList.get(i).replaceFirst("^\\s*", ""));
+		} 
 		
 		System.out.println("Type in the values for your bar graph: ");
 		while(true) {
@@ -59,7 +62,7 @@ public class BarGraph {
 		
 		System.out.println("\n"+graphName);
 		System.out.println("--------------");
-		int maxStr = keysList.stream().map(String::length).max(Integer::compareTo).get(); //length of longest string
+		int maxStr = keysList.stream().map(String::length).max(Integer::compareTo).get(); //length of longest string. 
 		
 		for (int i = 0; i < keysList.size(); i++) { //loop through each key
 			//each string should take up as many spaces on the left as the longest for the padding is the same
