@@ -5,7 +5,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
- * Author: Ali Mohammed-Ali
  * Date: March 10, 2022
  * Description: Prompts the user to answer a number of math questions until they 
  * give up, then display their score.
