@@ -1,5 +1,4 @@
 /*
- * Author: Ali Mohammed-Ali
  * Date: March 9, 2022
  * Description: Displays a range of a particular symbol using the number of
  * lines and symbols per line.
