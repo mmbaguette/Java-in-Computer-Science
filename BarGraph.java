@@ -1,7 +1,6 @@
 import java.util.*;
 
  /*
- * Author: Ali Mohammed-Ali
  * Date: March 21, 2022
  * Description: Creates a bar graph from the given values, assigned with a title
  */
